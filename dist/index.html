@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./style.css" rel="stylesheet" />
+    <title>Hockeys</title>
+  </head>
+  <body class="max-w-[1170px] mx-auto">
+    <head>
+      <nav class="navbar bg-base-100 p-0">
+        <div class="navbar-start">
+          <!-- =============== Small Device Navbar ================= -->
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li class="hover:font-bold hover:text-tomato"><a>Home</a></li>
+              <li class="hover:font-bold hover:text-tomato"><a>About</a></li>
+              <li class="hover:font-bold hover:text-tomato"><a>Pages</a></li>
+              <li class="hover:font-bold hover:text-tomato"><a>Blog</a></li>
+              <li class="hover:font-bold hover:text-tomato"><a>Contact</a></li>
+              <li class=""><input type="search" placeholder="Search" class="input h-7 input-bordered w-full max-w-xs" /></li>
+            </ul>
+          </div>
+          <a class="text-4xl font-extrabold" href="#"
+            >Hockey<span class="text-tomato">’</span>s</a
+          >
+        </div>
+        <!-- =============== Largest Device Navbar ================= -->
+        <div class="navbar-center hidden lg:flex gap-11">
+          <ul class="menu menu-horizontal p-0">
+            <li class="hover:font-bold hover:text-tomato"><a>Home</a></li>
+            <li class="hover:font-bold hover:text-tomato"><a>About</a></li>
+            <li class="hover:font-bold hover:text-tomato"><a>Pages</a></li>
+            <li class="hover:font-bold hover:text-tomato"><a>Blog</a></li>
+            <li class="hover:font-bold hover:text-tomato"><a>Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <img class="hidden lg:block mr-6" src="./img/search-icon.png" alt="search icon">
+          <a class="bg-tomato text-white text-xl font-bold px-6 py-3.5 rounded-lg">Get Ticket</a>
+        </div>
+      </nav>
+
+      <!-- =============== Banner Section ================= -->
+      <section class="carousel w-full mt-12">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="./img/banner-1.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 gap-6 top-[90%]">
+            <a href="#slide2" class="bg-dark h-10 w-10 p-2 rounded-full"><img src="./img/left-icon.png" alt="Left slider icon"></a>
+            <a href="#slide2" class="bg-dark h-10 w-10 p-2 rounded-full"><img src="./img/right-icon.png" alt="right slider icon"></a>
+          </div>
+        </div> 
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="./img/banner-2.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 gap-6 top-[90%]">
+            <a href="#slide1" class="bg-dark h-10 w-10 p-2 rounded-full"><img src="./img/left-icon.png" alt="Left slider icon"></a> 
+            <a href="#slide1" class="bg-dark h-10 w-10 p-2 rounded-full"><img src="./img/right-icon.png" alt="Right slider icon"></a>
+          </div>
+        </div> 
+      </section>
+    </head>
+  </body>
+</html>
