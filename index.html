@@ -7,7 +7,7 @@
     <title>Hockeys</title>
   </head>
   <body class="text-dark">
-    <header class="max-w-[1170px] mx-auto px-2.5 lg:p-0">
+    <header class="max-w-[1170px] mx-auto px-2.5 lg:p-0 my-2 lg:my-4 lg:relative">
       <nav class="navbar bg-base-100 p-0">
         <div class="navbar-start">
           <!-- =============== Small Device Navbar ================= -->
@@ -48,36 +48,42 @@
       </nav>
 
       <!-- =============== Banner Section ================= -->
-      <section class="carousel w-full mt-6 lg:mt-12 lg:relative">
+      <section class="carousel w-full mt-6 lg:mt-12">
         <!-- ===== Slider Start ===== -->
         <div id="slide1" class="carousel-item relative w-full">
-          <img src="./img/banner-1.png" class="w-full" />
-          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 gap-6 top-[90%]">
-            <a href="#slide2" class="bg-dark h-10 w-10 p-2 rounded-full"><img src="./img/left-icon.png" alt="Left slider icon"></a>
-            <a href="#slide2" class="bg-dark h-10 w-10 p-2 rounded-full"><img src="./img/right-icon.png" alt="right slider icon"></a>
+          <!-- <img src="./img/banner-1.png" class="w-full" /> -->
+          <picture class="w-full">
+            <source srcset="./img/small-banner-1.png" media="(max-width: 375px)">
+            <source srcset="./img/banner-1.png">
+            <img class="mx-auto" src="./img/banner-1.png" alt="Hockeys Banner 1 Trophy">
+          </picture>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-[43%] lg:left-5 gap-3 lg:gap-6 top-[90%]">
+            <a href="#slide2" class="bg-dark h-7 lg:h-10 w-7 lg:w-10 p-2 rounded-full"><img src="./img/left-icon.png" alt="Left slider icon"></a>
+            <a href="#slide2" class="bg-dark h-7 lg:h-10 w-7 lg:w-10 p-2 rounded-full"><img src="./img/right-icon.png" alt="right slider icon"></a>
           </div>
         </div> 
         <div id="slide2" class="carousel-item relative w-full">
-          <img src="./img/banner-2.png" class="w-full" />
-          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 gap-6 top-[90%]">
-            <a href="#slide1" class="bg-dark h-10 w-10 p-2 rounded-full"><img src="./img/left-icon.png" alt="Left slider icon"></a> 
-            <a href="#slide1" class="bg-dark h-10 w-10 p-2 rounded-full"><img src="./img/right-icon.png" alt="Right slider icon"></a>
+          <!-- <img src="./img/banner-2.png" class="w-full" /> -->
+          <picture class="w-full">
+            <source srcset="./img/small-banner-2.png" media="(max-width: 375px)">
+            <source srcset="./img/banner-2.png">
+            <img class="mx-auto" src="./img/banner-2.png" alt="Hockeys Banner 2 Players">
+          </picture>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-[43%] lg:left-5 gap-3 lg:gap-6 top-[90%]">
+            <a href="#slide1" class="bg-dark h-7 lg:h-10 w-7 lg:w-10 p-2 rounded-full"><img src="./img/left-icon.png" alt="Left slider icon"></a> 
+            <a href="#slide1" class="bg-dark h-7 lg:h-10 w-7 lg:w-10 p-2 rounded-full"><img src="./img/right-icon.png" alt="Right slider icon"></a>
           </div>
         </div> 
-        <!-- ===== Slider End ===== -->
-        <div class="bg-dark p-8 w-full lg:max-w-[502px] rounded-2xl mt-4 lg:mt-0 absolute lg:bottom-8 lg:right-8">
-          <h6 class="text-lg lg:text-2xl font-extrabold text-white mb-4">Meet all the heroes from the field</h6>
-          <p class="text-sm lg:text-base font-medium text-white/60">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
-        </div>
+        <!-- ====== Slider End ====== -->
       </section>
 
-      <hr class="border-dashed border-dark/20">
-
       <!-- =============== Alert Background bg-dark ================= -->
-      <!-- <section class="bg-dark p-8 max-w-[502px] rounded-2xl mt-4 lg:mt-0 fixed bottom-8 left-8">
+      <section class="bg-dark p-8 max-w-[502px] mx-auto rounded-2xl mt-4 mb-10 lg:my-0 lg:absolute lg:right-8 lg:bottom-8">
         <h6 class=" text-2xl font-extrabold text-white mb-4">Meet all the heroes from the field</h6>
         <p class="font-medium text-white/60">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
-      </section> -->
+      </section>
+
+      <hr class="border-dashed border-dark/20 block lg:hidden">
     </header>
 
     <main class="max-w-[1170px] mx-auto px-2.5 lg:p-0">
