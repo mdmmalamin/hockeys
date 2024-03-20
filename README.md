@@ -1,7 +1,7 @@
 <div id="top"></div>
 
 <div align="center">
-  <img src="./src/assets/umeew-logo.svg" width="120px">
+  <img src="./img/products/flag.png" width="120px">
   <h2>UMEEW</h2>
 </div>
 
