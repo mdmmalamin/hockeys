@@ -24,7 +24,7 @@ This app is developed by BackBenchers IT House!!
 - After build: node server/index.js
 
 ### Colors - text/backgraound
--🖌 'primary': '#001B21',
--🖌 'secondary': '#FF8C00',
--🖌 'gray': '#444444',
--🖌 'silver': '#B9B9B9',
+🖌 - 'primary': '#001B21',
+🖌 - 'secondary': '#FF8C00',
+🖌 - 'gray': '#444444',
+🖌 - 'silver': '#B9B9B9',
